@@ -25,7 +25,7 @@ export default function Background() {
                   boxShadow: "none",
                   border: "1px solid rgba(0,0,0,0.05)",
                   textAlign: "left",
-                  padding: "1.3rem 2rem"
+                  padding: "1.3rem"
                 }}
                 contentArrowStyle={{
                   borderRight: "0.4rem solid #9ca3af"
@@ -36,8 +36,8 @@ export default function Background() {
                 }}
                 >
                   <h3 className='font-semibold capitalize dark:text-gray-900'>{experience.title}</h3>
-                  <p className='text-gray-900 dark:text-gray-50 dark:text-gray-900'>{experience.company}</p>
-                  <p className='text-gray-900 dark:text-gray-50 dark:text-gray-900'>{experience.description}</p>
+                  <p className='text-base text-gray-900 dark:text-gray-50'>{experience.company}</p>
+                  <p className='!text-sm text-gray-900 dark:text-gray-50'>{experience.description}</p>
                 </VerticalTimelineElement>
               </Fragment>
             ))
