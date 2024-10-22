@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <footer className='max-w-[45rem] mx-auto mb-10 px-4 text-center text-gray-700'>
+    <footer className='max-w-[45rem] mx-auto mb-10 px-4 text-center text-gray-700 dark:text-gray-50'>
         <small className='text-sm block'>
             &copy; 2024 Jordi Sanchez, all rights reserved.
         </small>

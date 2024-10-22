@@ -80,7 +80,7 @@ import { HiDownload } from "react-icons/hi";
                 <a 
                 href="/Jordi_CV.pdf"
                 download
-                className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
+                className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10 text-gray-950"
                 >
                     Download CV
                     <HiDownload
@@ -88,21 +88,24 @@ import { HiDownload } from "react-icons/hi";
                     />
                 </a>
 
-                <a 
-                href="https://www.linkedin.com/in/jordi-s-2b658245/"
-                target="_blank"
-                className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
-                >
-                    <BsLinkedin />
-                </a>
+                <div className="flex gap-2">
+                    <a 
+                    href="https://www.linkedin.com/in/jordi-s-2b658245/"
+                    target="_blank"
+                    className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
+                    >
+                        <BsLinkedin />
+                    </a>
 
-                <a 
-                href="https://github.com/jorditosa"
-                target="_blank"
-                className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
-                >
-                    <BsGithub />
-                </a>
+                    <a 
+                    href="https://github.com/jorditosa"
+                    target="_blank"
+                    className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
+                    >
+                        <BsGithub />
+                    </a>
+                </div>
+
             </motion.div>
         </section>
     )

@@ -28,9 +28,9 @@ export default function ProjectItem({
       scale: scaleProgress,
       opacity: opacityProgress
     }}
-    className='group relative bg-gray-100 max-w-[45rem] border border-black/5 overflow-hidden sm:h-[24rem] sm:pr-8 mb-3 sm:mb-8 last:mb-0 even:pl-8 hover:bg-gray-200 transition'>
-      <div className='pt-4 pb-7 px-5 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full gap-y-2 group-even:ml-[18rem]'>
-        <h3 className='text-2xl'> {title}</h3>
+    className='group sm:relative bg-gray-100 max-w-[45rem] border border-black/5 overflow-hidden sm:h-[24rem] sm:pr-8 mb-3 sm:mb-8 last:mb-0 sm:even:pl-8 hover:bg-gray-200 transition rounded'>
+      <div className='pt-4 pb-7 px-5 sm:pr-2 sm:pt-10 w-full sm:max-w-[50%] flex flex-col h-full gap-y-2 sm:group-even:ml-[18rem]'>
+        <h3 className='text-2xl dark:text-gray-900'> {title}</h3>
 
         <p className='mt-2 leading-relaxed text-gray-700 text-[0.8rem]'>{description}</p>
 
@@ -52,7 +52,7 @@ export default function ProjectItem({
       quality={95}
       width={900}
       height={900}
-      className='absolute bottom-0 -right-40 w-[28rem] rounded-t-lg shadow-2xl object-cover group-even:right-[initial] group-even:-left-40 group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 transition'
+      className='sm:absolute bottom-0 -right-40 w-[28rem] rounded-t-lg shadow-2xl object-cover group-even:right-[initial] group-even:-left-40 group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 transition'
       />
         
     </motion.section>

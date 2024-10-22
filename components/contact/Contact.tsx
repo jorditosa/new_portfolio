@@ -28,9 +28,9 @@ export default function Contact() {
         </SectionHeading>
 
         <p>Please contact me directly at <a
-        className='underline'
+        className='underline hover:text-opacity-70'
         href='mailto:jordisato88@gmail.com'
-        ></a>{" "}</p>
+        >my personal email</a>{" "}.</p>
 
         <form
         className='mt-10 flex flex-col'
@@ -55,7 +55,7 @@ export default function Contact() {
             />
             <button 
             type='submit'
-            className='group flex justify-center items-center gap-2 bg-gray-900 text-white rounded-full outline-none h-[3rem] w-[8rem] transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105'
+            className='group flex justify-center items-center gap-2 bg-gray-900 text-white rounded-full outline-none h-[3rem] w-[8rem] transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 dark:bg-gray-50 dark:text-gray-950'
             >
                 Submit
                 <FaPaperPlane className='text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1' />
