@@ -43,7 +43,7 @@ import { HiDownload } from "react-icons/hi";
                         delay: 0.1,
                         duration: 0.7
                     }}
-                    className="absolute bottom-0 right-0 text-4xl">
+                    className="absolute bottom-0 -right-2 text-3xl">
                         👋
                     </motion.span>
                 </div>
@@ -51,11 +51,11 @@ import { HiDownload } from "react-icons/hi";
             </div>
 
             <motion.h1 
-            className="mb-10 font-medium mt-4 px-4 text-2xl !leading-[1.5] sm:text-4xl"
+            className="mb-10 font-medium mt-4 px-4 text-lg sm:text-2xl !leading-[1.5]"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             >
-                Hello! I'm Jordi, web developer, hybrid apps maker, cybersecurity beginner, father of twins and living in Catalonia. Having over{" "}
+                Hello! I'm Jordi, web developer, hybrid apps maker, cybersecurity beginner, father of twins from Catalonia. Having over{" "}
                 <span className="font-bold">three years of professional experience</span> in the IT field.
             </motion.h1>
 
@@ -69,7 +69,7 @@ import { HiDownload } from "react-icons/hi";
             >
                 <Link
                 href="#contact"
-                className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+                className="group min-w-[12rem] bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition border border-black/10"
                 >
                     Contact me
                     <BsArrowRight
@@ -80,7 +80,7 @@ import { HiDownload } from "react-icons/hi";
                 <a 
                 href="/Jordi_CV.pdf"
                 download
-                className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10 text-gray-950"
+                className="group min-w-[12rem] bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10 text-gray-950"
                 >
                     Download CV
                     <HiDownload

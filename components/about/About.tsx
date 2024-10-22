@@ -14,12 +14,16 @@ export default function About() {
             transition={{ delay: 0.125 }}
         >
             <SectionHeading>About me</SectionHeading>
-            <p className="mb-3">Thanks for your time reading that, just would let you know about my daily life, working as a <strong>fullstack developer</strong>, focused more on client side as <strong>JavaScript environment</strong> pillar of my duties. As <strong>ReactJS and NextJS</strong> provides strong power to create full stack apps, I use regularly to work with client and server components.</p>
+            <p className="mb-3">First of all, thanks for your time reading, just would let you know about my daily life, working as a <strong>fullstack developer</strong>, focused more on client side as <strong>JavaScript environment</strong> pillar of my professional growth. As <strong>ReactJS and NextJS</strong> provides strong power to create full stack apps, I use regularly to work both client and server components and develop my projects either acomplish my company goals.</p>
 
-            <p className="mb-3">Outside of my current work, I am willing to grow my knowledgement <strong>cibersecurity</strong> context and the use of <strong>artifical intelligence and llm</strong>. Able to work with basic pentesting model, to enumerate, scan, find vulnerabilities, exploit them and finally gain root privileges in not complex machines.</p>
+            <p>
+            I have experience managing private servers to host my applications, utilizing <strong>AWS</strong> infrastructure for optimal performance and scalability. This includes configuring and maintaining EC2 instances, managing databases, and ensuring secure deployments through services like AWS S3 and Lightsail. My hands-on approach allows me to efficiently manage server environments, ensuring high availability and smooth operation of my applications.
+            </p>
+
+            <p className="mb-3">Outside of my current work, I am willing to grow my knowledgement <strong>cibersecurity</strong> context and the use of <strong>artifical intelligence</strong> to gain better solidity to my projects. Capable to work and understand de <strong>OWASP</strong> top ten project and work to protect my apps.</p>
 
             <p className="mb-3">I've been learning a bit more, every day, about privacity and proper web and network security, playing and making my own python scripts. I keep up with the latest trends and developments in the field to better understand how to safeguard systems and data. This knowledge complements my work and personal projects, helping me approach problems with a security-conscious mindset.
-            In terms of usages, <strong>OSINT tools</strong> and <strong>virtual machines</strong> serves me as a playgrounds to learn third party tools to make some <strong>scans or IDS</strong> controls.</p>
+            </p>
 
         </motion.section>
     )
