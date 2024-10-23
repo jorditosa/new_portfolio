@@ -27,7 +27,7 @@ export default function Studies() {
                   background: "#f3f4f6",
                   border: "1px solid rgba(0,0,0,0.05)",
                   textAlign: "left",
-                  padding: "1rem",
+                  padding: "1.3rem",
                 }}
                 contentArrowStyle={{
                   borderRight: "0.4rem solid #9ca3af"
