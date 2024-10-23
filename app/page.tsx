@@ -5,6 +5,7 @@ import Background from "@/components/background/Background";
 import Projects from "@/components/projects/Projects";
 import Skills from "@/components/skills/Skills";
 import Contact from "@/components/contact/Contact";
+import Studies from "@/components/studies/Studies";
 
 export default function Home() {
   return (
@@ -15,8 +16,9 @@ export default function Home() {
       <SecDivider />
       <About />
       <Projects />
-      <Skills />
       <Background />
+      <Studies />
+      <Skills />
       <Contact />
     </main>
   );
