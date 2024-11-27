@@ -55,12 +55,12 @@ import { HiDownload } from "react-icons/hi";
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             >
-                Hello! I'm Jordi, web developer, hybrid apps maker, cybersecurity beginner, father of twins from Catalonia. Having over{" "}
+                Hello! I'm Jordi, web developer, hybrid apps maker, cybersecurity beginner from Catalonia. Having over{" "}
                 <span className="font-bold">three years of professional experience</span> in the IT field.
             </motion.h1>
 
             <motion.div 
-            className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+            className="flex flex-col sm:flex-row items-center justify-around gap-2 px-4 text-lg font-medium"
             initial={{ opacity: 0, y: 100}}
             animate={{ opacity: 1, y: 0}}
             transition={{

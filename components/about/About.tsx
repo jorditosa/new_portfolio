@@ -20,9 +20,9 @@ export default function About() {
             I have experience managing private servers to host my applications, utilizing <strong>AWS</strong> infrastructure for optimal performance and scalability. This includes configuring and maintaining EC2 instances, managing databases, and ensuring secure deployments through services like AWS S3 and Lightsail. My hands-on approach allows me to efficiently manage server environments, ensuring high availability and smooth operation of my applications.
             </p>
 
-            <p className="mb-3">Outside of my current work, I am willing to grow my knowledgement <strong>cibersecurity</strong> context and the use of <strong>artifical intelligence</strong> to gain better solidity to my projects. Capable to work and understand de <strong>OWASP</strong> top ten project and work to protect my apps.</p>
+            <p className="mb-3">Outside of my current work, I am willing to grow my knowledgement <strong>cibersecurity</strong> context and the use of <strong>artifical intelligence</strong> to gain better solidity to my projects. Capable to work and understand both <strong>OWASP</strong> top ten project and <strong>Mitre Att&ck&copy;</strong> standards for my jobs protection.</p>
 
-            <p className="mb-3">I've been learning a bit more, every day, about privacity and proper web and network security, playing and making my own python scripts. I keep up with the latest trends and developments in the field to better understand how to safeguard systems and data. This knowledge complements my work and personal projects, helping me approach problems with a security-conscious mindset.
+            <p className="mb-3">I've been learning and working every day to build myself as a web developer and cybersecurity professional, both fields that motivates me to keep growing day by day.
             </p>
 
         </motion.section>

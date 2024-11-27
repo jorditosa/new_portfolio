@@ -29,7 +29,7 @@ export default function Skills() {
             Skills
         </SectionHeading>
 
-        <ul className='flex flex-wrap justify-center gap-2 text-lg text-grey-700'>
+        <ul className='flex flex-wrap justify-between gap-2 text-lg text-grey-700'>
             {
                 skills.map((skill, index) => (
                     <motion.li 
