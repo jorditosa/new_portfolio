@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        ["navbar-light"]: "url('/bg/navbar-waves-light.svg')",
+        ["navbar-dark"]: "url('/bg/navbar-waves-dark.svg')",
+        ["footer-light"]: "url('/bg/footer-waves-light.svg')",
+        ["footer-dark"]: "url('/bg/footer-waves-dark.svg')",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

@@ -11,7 +11,10 @@ export default function About() {
             className="mb-28 max-w-[45rem] leading-8 sm:mb-40 scroll-mt-28"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.125 }}
+            transition={{
+                duration: 1,
+                delay: 0.2
+            }}
         >
             <SectionHeading>About me</SectionHeading>
             <p className="mb-3">First of all, thanks for your time reading, just would let you know about my daily life, working as a <strong>fullstack developer</strong>, focused more on client side as <strong>JavaScript environment</strong> pillar of my professional growth. As <strong>ReactJS and NextJS</strong> provides strong power to create full stack apps, I use regularly to work both client and server components and develop my projects either acomplish my company goals.</p>

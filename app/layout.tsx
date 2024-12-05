@@ -25,17 +25,14 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${geistSans.variable} bg-slate-50 text-gray-950 relative h-[5000px] pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
+        className={`${geistSans.variable} bg-slate-50 text-gray-950 relative h-[5000px] pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 bg-navbar-light dark:bg-navbar-dark bg-no-repeat bg-cover`}
       >
         <CSPostHogProvider>
-          <div className="bg-indigo-200 absolute top-[-6rem] -z-10 right-[2rem] h-[31.25rem] w-[14rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-indigo-500"></div>
-          <div className="bg-blue-200 absolute top-[-1rem] -z-10 left-[11rem] h-[50rem] w-[14rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
+            <Header />
+            {children}
+            <Footer />
 
-          <Header />
-          {children}
-          <Footer />
-
-          <ThemeSwitch />
+            <ThemeSwitch />
         </CSPostHogProvider>
       </body>
     </html>
