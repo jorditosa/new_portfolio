@@ -1,36 +1,32 @@
-"use server";
+type Inputs = {
+    sender: string;
+    message: string;
+}
 
-import { getErrorMessage, validateString } from "@/lib/utils";
-import { Resend } from "resend";
+type ResponseData = {
+    success: boolean;
+    message: string;
+  };
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
-export const sendEmail = async (formData: FormData) => {
-    const senderEmail = formData.get("senderEmail")
-    const message = formData.get("message")
-
-    if(!validateString(senderEmail, 200)) {
-        return {
-            error: "Invalid sender email"
-        }
-    } 
-    if (!validateString(message, 1000)) {
-        return {
-            error: "Invalid message"
-        }
-    }
-
+export const sendEmail = async (data: Inputs): Promise<ResponseData> => {
     try {
-        await resend.emails.send({
-            from: 'Portfolio form <onboarding@resend.dev>',
-            to: 'pokalde@protonmail.com',
-            subject: 'Message from contact form',
-            replyTo: senderEmail as string,
-            text: message as string
+        const response = await fetch('/api/send-email', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
         });
-    } catch (error: unknown) {
-        return {
-            error: getErrorMessage(error)
+
+        const result = await response.json();
+    
+        if (response.ok) {
+            return { success: true, message: result.message || '¡Message sent!' };
+        } else {
+            return { success: false, message: result.message || 'Error sending the message.' };
         }
+      } catch (error) {
+        console.error('Error:', error);
+        return { success: false, message: 'Hubo un problema al enviar el mensaje.' };
     }
-};
+}

@@ -4,7 +4,6 @@ import "./globals.css";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/Footer";
 import ThemeSwitch from "@/components/UI/theme-switch";
-import { CSPostHogProvider } from "./providers/ph-provider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,13 +26,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} bg-slate-50 text-gray-950 relative h-[5000px] pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 bg-navbar-light dark:bg-navbar-dark bg-no-repeat bg-cover`}
       >
-        <CSPostHogProvider>
             <Header />
             {children}
             <Footer />
 
             <ThemeSwitch />
-        </CSPostHogProvider>
       </body>
     </html>
   );
