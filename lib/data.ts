@@ -84,28 +84,28 @@ export const projects = [
         date: "Project Ongoing",
         description: "I developed a hybrid app using Ionic and Capacitor with the React framework, currently used by over 150 users. The app features interactive lists with cache and invalidation management and is available on both the Play Store and App Store. Includes managing key mobile permissions, such as push notifications, background processes, HTTP requests, file system access, and cookie preferences using Capacitor.",
         tags: ["Ionic", "Capacitor", "React", "Mobile Development", "Push Notifications"],
-        imageUrl: "/img/mobile-cap.png"
+        imageUrl: "/en/img/mobile-cap.png"
     },
     {
         title: "Takespai Ecommerce Website",
         date: "Project Ongoing",
         description: "I developed a dynamic ecommerce website using NextJS for ordering food and beverages, integrated with Strapi for managing products, users, and categories via REST API. I implemented NextAuth for authentication and created private spaces for user access.",
         tags: ["NextJS", "Strapi", "Ecommerce", "REST API", "NextAuth", "Serverless", "CRUD Operations"],
-        imageUrl: "/img/takespai.png"
+        imageUrl: "/en/img/takespai.png"
     },    
     {
         title: "Cursa dels Colls Static Website",
         date: "Project Ongoing",
         description: "I created a static website for a sports event using React, providing links to subscription sites for participants. Key technical features include React hooks, reusable components, and responsive design for an optimal user experience across devices.",
         tags: ["React", "Static Website", "React Hooks", "Reusable Components", "Responsive Design", "FTP Deployment"],
-        imageUrl: "/img/cursa.png"
+        imageUrl: "/en/img/cursa.png"
     },    
     {
         title: "OpenAI Chatbot wit Python",
         date: "Project Ongoing",
         description: "I developed a chatbot using OpenAI's GPT series models, based on transformer architecture, to efficiently handle context and long text dependencies. The implementation includes managing tokens, the basic text units processed by the model. Proper functionality requires setting up an .env file with the OpenAI API key.",
         tags: ["OpenAI", "GPT", "Transformer Architecture", "Chatbot", "API Integration", "Token Management"],
-        imageUrl: "/img/pic.jpeg"
+        imageUrl: "/en/img/pic.jpeg"
     }    
 ] as const
 

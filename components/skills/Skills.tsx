@@ -5,6 +5,10 @@ import SectionHeading from '../UI/SectionHeading'
 import { skills } from '@/lib/data'
 import { motion } from 'framer-motion'
 
+interface Props {
+    dict: { [key: string]: string };
+  }
+
 const fadeInAnimationVariants = {
     initial: {
         opacity: 0,
@@ -19,14 +23,14 @@ const fadeInAnimationVariants = {
     })
 }
 
-export default function Skills() {
+export default function Skills({ dict }: Props) {
   return (
     <section
     id='skills'
     className='mb-28 max-w-[45rem] scroll-mt-28 text-center sm:mb-40'
     >
         <SectionHeading>
-            Skills
+        {dict["studies-skills"]}
         </SectionHeading>
 
         <ul className='flex flex-wrap justify-between gap-2 text-lg text-grey-700'>

@@ -1,0 +1,20 @@
+{
+    "welcome-text": "Hello! I'm Jordi, web developer, hybrid apps maker and cybersecurity associate, living in Catalonia. Having over three years of professional experience in the IT field.",
+    "welcome-contact-btn": "Contact me",
+    "welcome-cv-btn": "Download my CV",
+    "about-title": "About me",
+    "about-text-1": "First of all, thanks for your time reading, just would let you know about my daily life, working as a fullstack developer, focused more on client side as JavaScript environment pillar of my professional growth. As ReactJS and NextJS provides strong power to create full stack apps, I use regularly to work both client and server components and develop my projects either accomplish my company goals.",
+    "about-text-2": "I have experience managing private servers to host my applications, utilizing AWS infrastructure for optimal performance and scalability. This includes configuring and maintaining EC2 instances, managing databases, and ensuring secure deployments through services like AWS S3 and Lightsail. My hands-on approach allows me to efficiently manage server environments, ensuring high availability and smooth operation of my applications.",
+    "about-text-3": "Outside of my current work, I am willing to grow my knowledge in cybersecurity context and the use of artificial intelligence to gain better solidity to my projects. Capable to work and understand both OWASP top ten project and Mitre Att&ck standards for my jobs protection.",
+    "about-text-4": "I've been learning and working every day to build myself as a web developer and cybersecurity professional, both fields that motivate me to keep growing day by day.",
+    "projects-title": "My personal projects",
+    "background-title": "Professional career",
+    "studies-title": "Studies",
+    "skills-title": "Skills",
+    "contact-title": "Contact me",
+    "contact-subtitle": "Please contact me directly writting below.",
+    "contact-email": "Your email",
+    "contact-message": "Your message",
+    "contact-cta": "Send"
+  }
+  

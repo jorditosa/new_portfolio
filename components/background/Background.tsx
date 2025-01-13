@@ -6,13 +6,17 @@ import { background } from '@/lib/data'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-export default function Background() {
+interface Props {
+  dict: { [key: string]: string };
+}
+
+export default function Background({ dict }: Props) {
   return (
     <section 
     id='experience'
     className='max-w-[45rem] scroll-mt-28 mb-28 sm:mb-40'>
         <SectionHeading>
-            Professional career
+          {dict["background-title"]}
         </SectionHeading>
 
         <VerticalTimeline 

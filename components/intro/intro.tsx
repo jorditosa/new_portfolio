@@ -6,12 +6,16 @@ import Link from "next/link";
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 
- export default function Intro() {
+interface Props {
+    dict: { [key: string]: string };
+}
+
+ export default function Intro({ dict }: Props ) {
 
     return (
         <section 
         id="home"
-        className="mb-28 max-w-[50rem] scroll-mt-[100rem] text-slate-50"
+        className="mb-28 max-w-[45rem] scroll-mt-[100rem] text-slate-50"
         >
             <div className="flex items-center justify-center">
                 <div className="relative">
@@ -21,7 +25,7 @@ import { HiDownload } from "react-icons/hi";
                     whileTap={{ scale: 0.95 }}
                     >
                         <Image
-                        src={'/portrait.png'}
+                        src={'/en/img/portrait.png'}
                         alt="Jordi portrait"
                         width={"192"}
                         height={"192"}
@@ -55,8 +59,7 @@ import { HiDownload } from "react-icons/hi";
                 duration: 1
             }}
             >
-                Hello! I'm Jordi, web developer, hybrid apps maker, cybersecurity beginner from Catalonia. Having over{" "}
-                <span className="font-bold">three years of professional experience</span> in the IT field.
+                {dict["welcome-text"]}
             </motion.h1>
 
             <motion.div 
@@ -72,7 +75,7 @@ import { HiDownload } from "react-icons/hi";
                 href="#contact"
                 className="group min-w-[12rem] bg-gray-900 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition border border-black/10"
                 >
-                    Contact me
+                    {dict["welcome-contact-btn"]}
                     <BsArrowRight
                     className="opacity-70 group-hover:translate-x-1 transition"
                     />
@@ -83,7 +86,7 @@ import { HiDownload } from "react-icons/hi";
                 download
                 className="group min-w-[12rem] bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10 text-gray-950"
                 >
-                    Download CV
+                    {dict["welcome-cv-btn"]}
                     <HiDownload
                     className="opacity-60 group-hover:translate-y-1 transition"
                     />

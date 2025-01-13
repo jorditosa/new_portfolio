@@ -1,0 +1,19 @@
+{
+    "welcome-text": "Hola! Sóc en Jordi, desenvolupador web, creador d'aplicacions híbrides i associat en ciberseguretat, vivint a Catalunya. Amb més de tres anys d'experiència professional en el camp de les tecnologies de la informació.",
+    "welcome-contact-btn": "Contacta'm",
+    "welcome-cv-btn": "Descarrega el meu CV",
+    "about-title": "Sobre mi",
+    "about-text-1": "Abans que res, gràcies pel teu temps llegint, només voldria explicar-te una mica sobre la meva vida diària, treballant com a desenvolupador fullstack, amb un enfocament més cap al client com a pilar de creixement professional dins l'entorn JavaScript. Com ReactJS i NextJS ofereixen una gran potència per crear aplicacions full stack, les faig servir regularment per treballar amb components tant de client com de servidor i desenvolupar els meus projectes per aconseguir els objectius de la meva empresa.",
+    "about-text-2": "Tinc experiència gestionant servidors privats per allotjar les meves aplicacions, utilitzant la infraestructura AWS per a un rendiment i escalabilitat òptims. Això inclou configurar i mantenir instàncies EC2, gestionar bases de dades i garantir desplegaments segurs a través de serveis com AWS S3 i Lightsail. El meu enfocament pràctic em permet gestionar de manera eficient els entorns de servidor, assegurant una alta disponibilitat i un funcionament fluid de les meves aplicacions.",
+    "about-text-3": "Fora de la meva feina actual, vull fer créixer el meu coneixement en ciberseguretat i l'ús de la intel·ligència artificial per aconseguir més solidesa als meus projectes. Sóc capaç de treballar i entendre tant el projecte OWASP top ten com els estàndards Mitre Att&ck per protegir els meus treballs.",
+    "about-text-4": "He estat aprenent i treballant cada dia per construir-me com a desenvolupador web i professional de la ciberseguretat, dos camps que m'animen a seguir creixent dia a dia.",
+    "projects-title": "Els meus projectes personals",
+    "background-title": "Carrera professional",
+    "studies-title": "Formació",
+    "skills-title": "Habilitats tecnològiques",
+    "contact-title": "Contacta'm",
+    "contact-subtitle": "Si us plau, contacta'm directament escrivint a continuació.",
+    "contact-email": "El teu correu electrònic",
+    "contact-message": "El teu missatge",
+    "contact-cta": "Enviar"
+}
