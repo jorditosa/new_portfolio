@@ -1,30 +1,34 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
-
-name: Node.js CI
+name: Check and build the project
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches:
+      - master
 
 jobs:
-  build:
-
+  deploy:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [18.x, 20.x, 22.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+    permissions:
+      contents: write
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - uses: actions/setup-node@v4
       with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
+        node-version: 18
+
+    - name: Run installation
+      run: npm ci
+
+    - name: Run the build
+      run: npm run build
+
+    - name: Auto commit
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: "Auto-commit build artifacts"
+        commit_author: jayes
+        file_pattern: .next/**
