@@ -3,7 +3,7 @@ name: Check and build the project
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
